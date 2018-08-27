@@ -6,8 +6,8 @@
 
 <IfModule mod_rewrite.c>
     RewriteEngine on
-    RewriteRule    ^health.php$ health.php    [L]
-    RewriteRule    ^(\.well-known/.*)$ $1 [L]
-    RewriteRule    ^$    webroot/    [L]
-    RewriteRule    (.*) webroot/$1    [L]
+    Options +FollowSymLinks
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^(.*)$ https://easymenuplanner-easymenuplanner.b9ad.pro-us-east-1.openshiftapps.com [R=301,L]
 </IfModule>
