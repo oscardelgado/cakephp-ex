@@ -1,13 +1,1 @@
-# Uncomment the following to prevent the httpoxy vulnerability
-# See: https://httpoxy.org/
-#<IfModule mod_headers.c>
-#    RequestHeader unset Proxy
-#</IfModule>
 
-<IfModule mod_rewrite.c>
-    RewriteEngine on
-    Options +FollowSymLinks
-    RewriteEngine On
-    RewriteBase /
-    RewriteRule ^(.*)$ https://easymenuplanner-easymenuplanner.b9ad.pro-us-east-1.openshiftapps.com/$1 [L]
-</IfModule>
