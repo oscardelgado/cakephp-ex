@@ -1,6 +1,5 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    ProxyPass / https://easymenuplanner-easymenuplanner.b9ad.pro-us-east-1.openshiftapps.com/
-    ProxyPassReverse / https://easymenuplanner-easymenuplanner.b9ad.pro-us-east-1.openshiftapps.com/
-    RewriteRule ^/(.*)$ https://easymenuplanner-easymenuplanner.b9ad.pro-us-east-1.openshiftapps.com/$1 [R]
+    ProxyPass /rest https://easymenuplanner-easymenuplanner.b9ad.pro-us-east-1.openshiftapps.com/rest
+    ProxyPassReverse /rest https://easymenuplanner-easymenuplanner.b9ad.pro-us-east-1.openshiftapps.com/rest
 </IfModule>
