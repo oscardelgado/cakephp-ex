@@ -9,10 +9,10 @@
 /--------------------------------------------------------------*/
 
 // Destination URL: Where this proxy leads to.
-$destinationURL = 'http://www.otherdomain.com/backend.php';
+$destinationURL = 'https://easymenuplanner-easymenuplanner.b9ad.pro-us-east-1.openshiftapps.com';
 
 // The only domain from which requests are authorized.
-$RequestDomain = 'example.com';
+$RequestDomain = 'php27ago1035-easymenuplaner.a3c1.starter-us-west-1.openshiftapps.com';
 
 // That's it for configuration!
 
